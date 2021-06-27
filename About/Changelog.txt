@@ -1,4 +1,7 @@
 # Changelog for PetMute
 
+1.0.1.0 - Something wierd happend during initial publish
+
+
 1.0.0.0 - First publish
 
