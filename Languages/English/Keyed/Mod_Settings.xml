@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <PM.WildAnimals.Label>Wild animals</PM.WildAnimals.Label>
+  <PM.WildAnimals.Tooltip>Wild animals will not make any ambient sounds</PM.WildAnimals.Tooltip>
+  <PM.TameAnimals.Label>Tame animals</PM.TameAnimals.Label>
+  <PM.TameAnimals.Tooltip>Tame animals will not make any ambient sounds</PM.TameAnimals.Tooltip>
+  <PM.DoNothing.Label>Okay, the mod will not do anything</PM.DoNothing.Label>
+</LanguageData>
