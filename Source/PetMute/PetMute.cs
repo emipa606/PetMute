@@ -2,15 +2,14 @@
 using HarmonyLib;
 using Verse;
 
-namespace PetMute
+namespace PetMute;
+
+[StaticConstructorOnStartup]
+public static class PetMute
 {
-    [StaticConstructorOnStartup]
-    public static class PetMute
+    static PetMute()
     {
-        static PetMute()
-        {
-            var harmony = new Harmony("Mlie.PetMute");
-            harmony.PatchAll(Assembly.GetExecutingAssembly());
-        }
+        var harmony = new Harmony("Mlie.PetMute");
+        harmony.PatchAll(Assembly.GetExecutingAssembly());
     }
 }

@@ -5,4 +5,5 @@
   <PM.TameAnimals.Label>Tame animals</PM.TameAnimals.Label>
   <PM.TameAnimals.Tooltip>Tame animals will not make any ambient sounds</PM.TameAnimals.Tooltip>
   <PM.DoNothing.Label>Okay, the mod will not do anything</PM.DoNothing.Label>
+  <PM.ModVersion>Installed mod-version: {0}</PM.ModVersion>
 </LanguageData>
