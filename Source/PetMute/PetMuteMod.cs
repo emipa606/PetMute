@@ -9,10 +9,12 @@ internal class PetMuteMod : Mod
 {
     private static string currentVersion;
 
+    public static PetMuteMod instance;
+
     /// <summary>
     ///     The private settings
     /// </summary>
-    private PetMuteSettings settings;
+    public readonly PetMuteSettings Settings;
 
     /// <summary>
     ///     Cunstructor
@@ -20,25 +22,10 @@ internal class PetMuteMod : Mod
     /// <param name="content"></param>
     public PetMuteMod(ModContentPack content) : base(content)
     {
+        instance = this;
         currentVersion =
-            VersionFromManifest.GetVersionFromModMetaData(ModLister.GetActiveModWithIdentifier("Mlie.PetMute"));
-    }
-
-    /// <summary>
-    ///     The instance-settings for the mod
-    /// </summary>
-    private PetMuteSettings Settings
-    {
-        get
-        {
-            if (settings == null)
-            {
-                settings = GetSettings<PetMuteSettings>();
-            }
-
-            return settings;
-        }
-        set => settings = value;
+            VersionFromManifest.GetVersionFromModMetaData(content.ModMetaData);
+        Settings = GetSettings<PetMuteSettings>();
     }
 
     /// <summary>
@@ -64,7 +51,13 @@ internal class PetMuteMod : Mod
             "PM.WildAnimals.Tooltip".Translate());
         listing_Standard.CheckboxLabeled("PM.TameAnimals.Label".Translate(), ref Settings.TameAnimals,
             "PM.TameAnimals.Tooltip".Translate());
-        if (!Settings.TameAnimals && !Settings.WildAnimals)
+        if (ModLister.BiotechInstalled)
+        {
+            listing_Standard.CheckboxLabeled("PM.ColonyMechanoids.Label".Translate(), ref Settings.ColonyMechanoids,
+                "PM.ColonyMechanoids.Tooltip".Translate());
+        }
+
+        if (!Settings.TameAnimals && !Settings.WildAnimals && !Settings.ColonyMechanoids)
         {
             listing_Standard.Label("PM.DoNothing.Label".Translate());
         }

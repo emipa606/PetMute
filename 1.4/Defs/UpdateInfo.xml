@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<TabulaRasa.UpdateDef Abstract="true" Name="PetMute_UpdateInfoBase">
+		<linkUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2529875612</linkUrl>
+		<banner>UpdateInfo/PetMute</banner>
+	</TabulaRasa.UpdateDef>
+	<TabulaRasa.UpdateDef ParentName="PetMute_UpdateInfoBase">
+		<defName>PetMute_1_4_2</defName>
+		<date>2023/7/17</date>
+		<content>There is now an option to mute colony mechanoids</content>
+	</TabulaRasa.UpdateDef>
+</Defs>
+

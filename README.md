@@ -32,3 +32,4 @@ https://ludeon.com/forums/index.php?topic=24716.msg253201#msg253201
 
 
 
+https://steamcommunity.com/sharedfiles/filedetails/changelog/2529875612]Last updated 2023-07-17

@@ -7,6 +7,7 @@ namespace PetMute;
 /// </summary>
 internal class PetMuteSettings : ModSettings
 {
+    public bool ColonyMechanoids;
     public bool TameAnimals = true;
     public bool WildAnimals = true;
 
@@ -18,5 +19,6 @@ internal class PetMuteSettings : ModSettings
         base.ExposeData();
         Scribe_Values.Look(ref WildAnimals, "WildAnimals", true);
         Scribe_Values.Look(ref TameAnimals, "TameAnimals", true);
+        Scribe_Values.Look(ref ColonyMechanoids, "ColonyMechanoids");
     }
 }

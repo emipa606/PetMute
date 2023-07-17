@@ -9,7 +9,6 @@ public static class PetMute
 {
     static PetMute()
     {
-        var harmony = new Harmony("Mlie.PetMute");
-        harmony.PatchAll(Assembly.GetExecutingAssembly());
+        new Harmony("Mlie.PetMute").PatchAll(Assembly.GetExecutingAssembly());
     }
 }
