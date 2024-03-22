@@ -1,13 +1,12 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<HugsLib.UpdateFeatureDef Abstract="true" Name="PetMute_UpdateFeatureBase">
-		<modNameReadable>PetMute</modNameReadable>
-		<linkUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2529875612</linkUrl>
-	</HugsLib.UpdateFeatureDef>
-	<HugsLib.UpdateFeatureDef ParentName="PetMute_UpdateFeatureBase">
-		<defName>PetMute_1_4_2</defName>
-		<assemblyVersion>1.4.2</assemblyVersion>
-		<content>There is now an option to mute colony mechanoids</content>
-	</HugsLib.UpdateFeatureDef>
+  <HugsLib.UpdateFeatureDef Abstract="true" Name="PetMute_UpdateFeatureBase">
+    <modNameReadable>PetMute</modNameReadable>
+    <linkUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2529875612</linkUrl>
+  </HugsLib.UpdateFeatureDef>
+  <HugsLib.UpdateFeatureDef ParentName="PetMute_UpdateFeatureBase">
+    <defName>PetMute_1_4_2</defName>
+    <assemblyVersion>1.4.2</assemblyVersion>
+    <content>There is now an option to mute colony mechanoids</content>
+  </HugsLib.UpdateFeatureDef>
 </Defs>
-
