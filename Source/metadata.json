@@ -2,5 +2,12 @@
   "Continued": true,
   "CanAdd": "0",
   "CanRemove": "0",
-  "PreviewVersion": "1.5"
+  "PreviewVersion": "1.6",
+  "SocialImageSet": true,
+  "SearchTags": [
+    " silence",
+    " animals",
+    " mechanoids"
+  ],
+  "LastXmlCleaning": "2025-06-20T18:04:16.7650345+02:00"
 }

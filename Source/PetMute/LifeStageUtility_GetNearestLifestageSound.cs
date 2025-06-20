@@ -13,7 +13,7 @@ public static class LifeStageUtility_GetNearestLifestageSound
             return true;
         }
 
-        if (pawn.IsColonyMech && PetMuteMod.instance.Settings.ColonyMechanoids)
+        if (pawn.IsColonyMech && PetMuteMod.Instance.Settings.ColonyMechanoids)
         {
             return false;
         }
@@ -23,11 +23,11 @@ public static class LifeStageUtility_GetNearestLifestageSound
             return true;
         }
 
-        if (pawn.Faction?.IsPlayer == true && !PetMuteMod.instance.Settings.TameAnimals)
+        if (pawn.Faction?.IsPlayer == true && !PetMuteMod.Instance.Settings.TameAnimals)
         {
             return true;
         }
 
-        return pawn.Faction?.IsPlayer != true && !PetMuteMod.instance.Settings.WildAnimals;
+        return pawn.Faction?.IsPlayer != true && !PetMuteMod.Instance.Settings.WildAnimals;
     }
 }

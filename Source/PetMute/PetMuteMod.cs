@@ -9,7 +9,7 @@ internal class PetMuteMod : Mod
 {
     private static string currentVersion;
 
-    public static PetMuteMod instance;
+    public static PetMuteMod Instance;
 
     /// <summary>
     ///     The private settings
@@ -22,7 +22,7 @@ internal class PetMuteMod : Mod
     /// <param name="content"></param>
     public PetMuteMod(ModContentPack content) : base(content)
     {
-        instance = this;
+        Instance = this;
         currentVersion =
             VersionFromManifest.GetVersionFromModMetaData(content.ModMetaData);
         Settings = GetSettings<PetMuteSettings>();

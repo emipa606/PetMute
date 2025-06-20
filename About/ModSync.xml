@@ -2,7 +2,7 @@
 <ModSyncNinjaData>
   <ID>b819d463-6758-43aa-afba-25ae78dea7a1</ID>
   <ModName>PetMute (Continued)</ModName>
-  <Version>1.5.0</Version>
+  <Version>1.6.0</Version>
   <SaveBreaking>False</SaveBreaking>
   <Host name="Github">
     <Owner>emipa606</Owner>
@@ -12,3 +12,4 @@
     <Branch>master</Branch>
   </Host>
 </ModSyncNinjaData>
+
