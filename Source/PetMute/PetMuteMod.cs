@@ -41,11 +41,11 @@ internal class PetMuteMod : Mod
     ///     The settings-window
     ///     For more info: https://rimworldwiki.com/wiki/Modding_Tutorials/ModSettings
     /// </summary>
-    /// <param name="rect"></param>
-    public override void DoSettingsWindowContents(Rect rect)
+    /// <param name="inRect"></param>
+    public override void DoSettingsWindowContents(Rect inRect)
     {
         var listing_Standard = new Listing_Standard();
-        listing_Standard.Begin(rect);
+        listing_Standard.Begin(inRect);
         listing_Standard.Gap();
         listing_Standard.CheckboxLabeled("PM.WildAnimals.Label".Translate(), ref Settings.WildAnimals,
             "PM.WildAnimals.Tooltip".Translate());
